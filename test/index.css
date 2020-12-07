@@ -1,0 +1,105 @@
+body {
+  margin-top: 68px;
+}
+
+body::-webkit-scrollbar {
+  width: 0.4rem;
+}
+
+body::-webkit-scrollbar-track {
+  background-color: #000;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #fff;
+}
+
+.header,
+.footer {
+  background-color: #828282;
+  text-transform: uppercase;
+  /*text-align: center;*/
+  color: #fff;
+  margin: 1rem 0;
+  padding: 0.5rem 1rem;
+  border: 0.0625rem solid #000;
+  border-left: 0;
+  border-right: 0;
+  border-radius: 0.25rem 0 0 0.25rem;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.header nav {
+  display: inline;
+  float: right;
+  margin-right: 1rem;
+}
+
+.header nav ul {
+  list-style-type: none;
+  display: inline;
+}
+
+.header nav ul li {
+  display: inline;
+  margin-right: 0.5rem;
+}
+
+.header nav ul li:last-of-type {
+  margin-right: 1rem;
+  /*color: #000;*/
+}
+
+.action-link {
+  text-decoration: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+.action-link:hover {
+  color: #000;
+  background-color: #fff;
+}
+
+.footer {
+  /* this is for sticky footer */
+  top: unset;
+  bottom: 0;
+}
+
+.about-me-img {
+  display: block;
+  margin-top: 1rem;
+  width: 50%;
+}
+
+.universal-list {
+  margin-top: 1rem;
+}
+
+.universal-list ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  margin-top: 1rem;
+}
+
+.universal-list ul li {
+  /*margin-bottom: 0.4rem;*/
+  border: 0.0625rem solid grey;
+  border-top: 0;
+  padding: 0.4rem;
+  background-color: rgba(128, 128, 128, .25);
+}
+
+.universal-list ul li:hover {
+  background-color: rgba(0, 161, 255, .25);
+}
+
+.universal-list ul li:first-of-type {
+  border-top: 0.0625rem solid grey;
+}
