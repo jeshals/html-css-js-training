@@ -71,6 +71,52 @@ body::-webkit-scrollbar-thumb {
   bottom: 0;
 }
 
+.section-one p.para-in-odd {
+  color: green;
+}
+
+.section-one p:nth-of-type(even) {
+  color: red;
+}
+
+/* To explicitly begin with */
+/*.section-one p[class^="para-"] {
+  font-weight: bold;
+}*/
+
+/* To include or start/end with */
+.section-one p[class*="-even"] {
+  font-weight: bold;
+}
+
+/* To explicitly end with */
+/*.section-one p[class$="-even"] {
+  font-weight: bold;
+}*/
+
+.section-one .para-in-odd.para-highlighted {
+  background-color: yellow;
+}
+
+.section-one .para-even.para-highlighted {
+  background-color: grey;
+}
+
+/* Select span tags which are immediate children of parent */
+.section-one > span {
+  text-transform: capitalize;
+}
+
+/* Select span tag which comes after the first span tag */
+.section-one span + span {
+  background-color: blue;
+}
+
+/* Select span tag which comes after the first span tag which are the immediate children of parent */
+.section-one > span + span {
+  background-color: blue;
+}
+
 .about-me-img {
   display: block;
   margin-top: 1rem;
