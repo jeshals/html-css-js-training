@@ -4,6 +4,8 @@ body {
 
 /* Styling the vertical scrollbar*/
 body::-webkit-scrollbar {
+  /* rem is based on the base font-size of the html document,
+    which by default is 16px */
   width: 0.4rem;
 }
 
@@ -24,6 +26,8 @@ body::-webkit-scrollbar-thumb {
   margin: 1rem 0;
   /* Top-right-bottom-left */
   padding: 0.5rem;
+  /* Top right-left bottom */
+  /*padding: 0.5rem 0 0;*/
   border: 0.0625rem solid #000;
   border-left: 0;
   border-right: 0;
@@ -105,17 +109,6 @@ body::-webkit-scrollbar-thumb {
   font-weight: bold;
 }*/
 
-/* Select span tags which are direct children of parent */
-#section-one > span {
-  text-transform: capitalize;
-}
-
-/* Select span tags which come after the first span tag,
-  which is the direct children of parent */
-#section-one > span + span {
-  background-color: blue;
-}
-
 /* Select all span tags within the id,
   regardless of their heirarchy */
 #section-one span {
@@ -126,6 +119,28 @@ body::-webkit-scrollbar-thumb {
   regardless of their heirarchy */
 #section-one span + span {
   background-color: blue;
+}
+
+/* Select span tags which are direct children of parent */
+#section-one > span {
+  text-transform: capitalize;
+}
+
+/* Select span tags which come after the first span tag,
+  which is the direct children of parent */
+#section-one > span + span {
+  background-color: green;
+}
+
+/* Select div tags which come after the first span tag,
+  which is the direct children of parent */
+#section-one > span + div {
+  background-color: red;
+}
+
+#section-one .universal-list ul li:hover {
+  background-color: #000;
+  color: #fff;
 }
 
 .about-me-img {
