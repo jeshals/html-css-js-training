@@ -1,27 +1,81 @@
-<section id="section-two">
-  <div id="about-me"
-    class="about-me">
-    About me:
+<!DOCTYPE html>
 
-    <img class="about-me-img" src="../UXUI.png" alt="UXUI.png">
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
 
-    <article id="more-about-me" class="universal-list">
-      More about me:
+    <title>About Me</title>
 
-      <ul>
-        <li>
-          I am an UI engineer.
-        </li>
-        <li>
-          Just graduated.
-        </li>
-        <li>
-          I have a little experience with HTML, CSS, JS.
-        </li>
-        <li>
-          I can learn a lot from "Karman, who is good at 'debugging'" &amp; "Apoorv".
-        </li>
-      </ul>
-    </article>
-  </div>
-</section>
+    <!-- External style example -->
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="common.css">
+
+    <!-- Internal style example -->
+    <!-- <style media="screen">
+      body {
+        background-color: yellow;
+      }
+    </style> -->
+  </head>
+
+  <body>
+    <header class="header">
+      This is my header
+      <nav>
+        <ul>
+          <li>
+            <a class="action-link"
+              href="index.html"
+              title="About Me">Home</a>
+          </li>
+          <li>
+            <a class="action-link"
+              href="section-two.html"
+              title="About Me">About Me</a>
+          </li>
+          <li>
+            <a class="action-link"
+              href="https://github.com/jeshals/html-css-js-training"
+              target="_blank"
+              title="My Repo">
+              My Repo
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="section-two">
+      <div id="about-me"
+        class="about-me">
+        About me:
+
+        <img class="about-me-img" src="../UXUI.png" alt="UXUI.png">
+
+        <article id="more-about-me" class="universal-list">
+          More about me:
+
+          <ul>
+            <li>
+              I am an UI engineer.
+            </li>
+            <li>
+              Just graduated.
+            </li>
+            <li>
+              I have a little experience with HTML, CSS, JS.
+            </li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <aside class="the-only-aside">
+      This is my aside.
+    </aside>
+
+    <footer class="footer">
+      This is my footer
+    </footer>
+  </body>
+</html>

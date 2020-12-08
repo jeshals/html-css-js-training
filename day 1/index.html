@@ -3,10 +3,12 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Hello</title>
+
+    <title>Home</title>
 
     <!-- External style example -->
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="common.css">
 
     <!-- Internal style example -->
     <!-- <style media="screen">
@@ -22,7 +24,9 @@
       <nav>
         <ul>
           <li>
-            Home
+            <a class="action-link"
+              href="index.html"
+              title="About Me">Home</a>
           </li>
           <li>
             <a class="action-link"
@@ -41,7 +45,7 @@
       </nav>
     </header>
 
-    <section class="section-one">
+    <section id="section-one">
       <h1>
         Hello <span>I am a span inside h1</span> <span>I am another span inside h1</span>
       </h1>
@@ -66,8 +70,6 @@
     <aside class="the-only-aside">
       This is my aside.
     </aside>
-
-    <!-- This is commenting -->
 
     <footer class="footer">
       This is my footer

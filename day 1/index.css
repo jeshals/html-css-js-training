@@ -2,6 +2,7 @@ body {
   margin-top: 68px;
 }
 
+/* Styling the vertical scrollbar*/
 body::-webkit-scrollbar {
   width: 0.4rem;
 }
@@ -18,13 +19,15 @@ body::-webkit-scrollbar-thumb {
 .footer {
   background-color: #828282;
   text-transform: uppercase;
-  /*text-align: center;*/
   color: #fff;
+  /* Top-bottom, right-left */
   margin: 1rem 0;
-  padding: 0.5rem 1rem;
+  /* Top-right-bottom-left */
+  padding: 0.5rem;
   border: 0.0625rem solid #000;
   border-left: 0;
   border-right: 0;
+  /* Top, right, bottom, left */
   border-radius: 0.25rem 0 0 0.25rem;
 
   position: fixed;
@@ -51,7 +54,6 @@ body::-webkit-scrollbar-thumb {
 
 .header nav ul li:last-of-type {
   margin-right: 1rem;
-  /*color: #000;*/
 }
 
 .action-link {
@@ -60,60 +62,69 @@ body::-webkit-scrollbar-thumb {
   cursor: pointer;
 }
 
+/* Styling hover events */
 .action-link:hover {
   color: #000;
   background-color: #fff;
 }
 
-.footer {
-  /* this is for sticky footer */
-  top: unset;
-  bottom: 0;
-}
-
-.section-one p.para-in-odd {
+/* Styling all p elements with class="para-in-odd",
+  within the id*/
+#section-one p.para-in-odd {
   color: green;
 }
 
-.section-one p:nth-of-type(even) {
+/* Styling all elements with class="para-highlighted",
+  as well as with class="para-in-odd" */
+#section-one .para-in-odd.para-highlighted {
+  background-color: yellow;
+}
+
+/* Styling all elements with class="para-highlighted",
+  as well as with class="para-in-even" */
+#section-one .para-even.para-highlighted {
+  background-color: grey;
+}
+
+#section-one p:nth-of-type(even) {
   color: red;
 }
 
 /* To explicitly begin with */
-/*.section-one p[class^="para-"] {
+/*#section-one p[class^="para-"] {
   font-weight: bold;
 }*/
 
-/* To include or start/end with */
-.section-one p[class*="-even"] {
+/* To include */
+#section-one p[class*="-even"] {
   font-weight: bold;
 }
 
 /* To explicitly end with */
-/*.section-one p[class$="-even"] {
+/*#section-one p[class$="-even"] {
   font-weight: bold;
 }*/
 
-.section-one .para-in-odd.para-highlighted {
-  background-color: yellow;
-}
-
-.section-one .para-even.para-highlighted {
-  background-color: grey;
-}
-
-/* Select span tags which are immediate children of parent */
-.section-one > span {
+/* Select span tags which are direct children of parent */
+#section-one > span {
   text-transform: capitalize;
 }
 
-/* Select span tag which comes after the first span tag */
-.section-one span + span {
+/* Select span tags which come after the first span tag,
+  which is the direct children of parent */
+#section-one > span + span {
   background-color: blue;
 }
 
-/* Select span tag which comes after the first span tag which are the immediate children of parent */
-.section-one > span + span {
+/* Select all span tags within the id,
+  regardless of their heirarchy */
+#section-one span {
+  text-decoration: underline;
+}
+
+/* Select span tags which come after the first span tag,
+  regardless of their heirarchy */
+#section-one span + span {
   background-color: blue;
 }
 
@@ -123,29 +134,8 @@ body::-webkit-scrollbar-thumb {
   width: 50%;
 }
 
-.universal-list {
-  margin-top: 1rem;
-}
-
-.universal-list ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  margin-top: 1rem;
-}
-
-.universal-list ul li {
-  /*margin-bottom: 0.4rem;*/
-  border: 0.0625rem solid grey;
-  border-top: 0;
-  padding: 0.4rem;
-  background-color: rgba(128, 128, 128, .25);
-}
-
-.universal-list ul li:hover {
-  background-color: rgba(0, 161, 255, .25);
-}
-
-.universal-list ul li:first-of-type {
-  border-top: 0.0625rem solid grey;
+.footer {
+  /* this is for sticky footer */
+  top: unset;
+  bottom: 0;
 }
