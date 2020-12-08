@@ -1,0 +1,33 @@
+/* Selecting all elements */
+/** {
+  box-sizing: border-box;
+}*/
+
+/* Body styles are not inherited */
+body {
+  margin: 0;
+  margin-top: 68px;
+  padding: 0;
+  /*box-sizing: border-box; //its not inherited*/
+}
+
+#css-box-model h1 {
+  /*margin: 0.5rem;
+  margin-bottom: 30px;*/
+  margin: inherit;
+}
+
+#box {
+  background-color: blue;
+  padding: 10px;
+  border: 5px solid black;
+  margin: 40px;
+  /*width: 100px;*/
+  height: 100px;
+  /*box-sizing: border-box; //its not inherited*/
+  overflow: auto; //will not work with box-sizing
+}
+
+#content {
+  background-color: #90EE90; //green
+}
