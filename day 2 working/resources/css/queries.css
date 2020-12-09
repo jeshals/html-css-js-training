@@ -23,21 +23,21 @@
   .works-steps { margin-bottom: 40px; }
   .works-step:last-of-type { margin-bottom: 60px; }*/
 
-  .app-screen { width: 50%; }
+  /*.app-screen { width: 50%; }*/
 
-  .icon-small {
+  /*.icon-small {
     width: 17px;
     margin-right: 5px;
-  }
+  }*/
 
-  .city-feature { font-size: 90%; }
+  /*.city-feature { font-size: 90%; }*/
 
-  .plan-box {
+  /*.plan-box {
     width: 100%;
     margin-left: 0%;
-  }
+  }*/
 
-  .plan-price { font-size: 250%; }
+  /*.plan-price { font-size: 250%; }*/
   .contact-form { width: 80%; }
 }
 
@@ -54,7 +54,7 @@
   }
 
   .main-nav { display: none; }
-  .mobile-nav-icon { display: inline-block; }
+  /*.mobile-nav-icon { display: inline-block; }*/
 
   .main-nav {
     float: left;
